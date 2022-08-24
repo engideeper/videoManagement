@@ -285,9 +285,6 @@ const getData = (params) => {
         .filter((res) => {
           return type_select ? res.type === type_select : res;
         });
-      setTimeout(() => {
-        resolve([result, result.length]);
-      }, 1500);
     }
   });
 };

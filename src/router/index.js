@@ -2,7 +2,7 @@
  * @Author: Austen austen.guo@tcsoft.net.cn
  * @Date: 2022-08-17 10:34:07
  * @LastEditors: Austen austen.guo@tcsoft.net.cn
- * @LastEditTime: 2022-08-22 16:18:43
+ * @LastEditTime: 2022-08-24 15:13:54
  * @FilePath: \video-management\src\router\index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -30,17 +30,6 @@ const routes = [
         component: () => import("@/pages/home"),
       },
       {
-        path: "/workspace",
-        name: "workspace",
-        meta: {
-          keepAlive: true,
-          requiresAuth: true,
-          title: "工作台",
-          key: "workspace",
-        },
-        component:() => import("@/pages/workspace"),
-      },
-      {
         path: "/test",
         component:() => import("@/pages/test"),
         name: "dataManagement",
@@ -52,14 +41,14 @@ const routes = [
         },
       },
       {
-        path: "/setting",
-        component:() => import("@/pages/setting"),
-        name: "setting",
+        path: "/card",
+        component:() => import("@/pages/card"),
+        name: "card",
         meta: {
           keepAlive: true,
           requiresAuth: true,
-          title: "系统设置",
-          key: "setting",
+          title: "卡片展示",
+          key: "card",
         },
       },
     ],
@@ -69,11 +58,7 @@ const routes = [
     path: "/login",
     name: "login",
     component:() => import("@/pages/login"),
-  },
-  {
-    path: "/:pathMatch(.*)*",
-    redirect: "/404",
-  },
+  }
 ];
 
 const router = createRouter({ history, routes });
