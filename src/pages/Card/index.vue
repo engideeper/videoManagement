@@ -14,15 +14,16 @@
         <div class=" flex-col text-left text_show text-xs">
           <div class="flex leading-tight text-xs justify-between">
             <span class="font-bold">错误代码 DMU0002412</span>   
-            <el-button type="success" size="small" >Edit</el-button>
+            <el-button type="success" size="small" >编辑</el-button>
           </div>        
           <div class="flex leading-tight truncate ... text-xs justify-between" >
             <span class="font-bold">标签 DMU|仪器|故障|重置|</span> 
-           <el-button id="del_btn" size="small" type="danger" >Delete </el-button>
+           <el-button id="del_btn" size="small" type="danger" >删除 </el-button>
           </div>
-          <!-- <div class="flex leading-tight text-xs">
-            <i class="font-bold">上传日期</i> 2022-08-24
-          </div> -->
+          <div class="flex leading-tight text-xs justify-between">
+             <span class="font-bold">上传时间 2022-08-22</span>   
+            <el-button type="success" size="small" >详情</el-button>
+          </div>
         </div>
       </div>
     </div>
@@ -45,7 +46,7 @@ const list = reactive([]);
 let dialogVisible = ref(false);
 
 onMounted(() => {
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 15; i++) {
     list.push(i);
   }
 });
