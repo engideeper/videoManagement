@@ -11,10 +11,18 @@
           video thumbnail 
           <!-- {{ item+1 }} -->
         </div>
-        <div class="block text-left text_show">
-          <div class="leading-tight"><i class="font-bold  text-sm">错误代码</i> DMU0002412  </div>        
-          <div class="leading-tight truncate ..." ><i class="font-bold  text-sm ">标签</i> DMU|仪器|故障|重置|</div>
-          <div class="leading-tight"><i class="font-bold  text-sm">上传日期</i> 2022-08-24</div>
+        <div class=" flex-col text-left text_show text-xs">
+          <div class="flex leading-tight text-xs justify-between">
+            <span class="font-bold">错误代码 DMU0002412</span>   
+            <el-button type="success" size="small" >Edit</el-button>
+          </div>        
+          <div class="flex leading-tight truncate ... text-xs justify-between" >
+            <span class="font-bold">标签 DMU|仪器|故障|重置|</span> 
+           <el-button id="del_btn" size="small" type="danger" >Delete </el-button>
+          </div>
+          <!-- <div class="flex leading-tight text-xs">
+            <i class="font-bold">上传日期</i> 2022-08-24
+          </div> -->
         </div>
       </div>
     </div>
