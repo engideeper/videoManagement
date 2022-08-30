@@ -6,7 +6,7 @@
       
       <el-upload
     class="upload-demo"
-    action="@/src/assets/videos/t1.mp4"
+    action="@/src/assets/videos/"
     :on-preview="handlePreview"
     :on-remove="handleRemove"
     :before-remove="beforeRemove"
